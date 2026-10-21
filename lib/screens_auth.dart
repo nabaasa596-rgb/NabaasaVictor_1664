@@ -138,7 +138,7 @@ class _LoginScreenState extends State<LoginScreen> {
           const SizedBox(height: 16),
           PrimaryButton('Login', _go),
           const SizedBox(height: 14),
-          Row(children: const [
+          const Row(children: [
             Expanded(child: Divider()),
             Padding(
                 padding: EdgeInsets.symmetric(horizontal: 10),

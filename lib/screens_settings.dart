@@ -21,15 +21,15 @@ class SettingsScreen extends StatelessWidget {
       body: ListenableBuilder(
         listenable: AppState.I,
         builder: (_, __) => ListView(padding: const EdgeInsets.symmetric(horizontal: 16), children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10),
+          const Padding(
+            padding: EdgeInsets.symmetric(vertical: 10),
             child: Row(children: [
-              const CircleAvatar(
+              CircleAvatar(
                   radius: 20,
                   backgroundColor: Color(0xFF6B7280),
                   child: Icon(Icons.person, color: Colors.white)),
-              const SizedBox(width: 12),
-              Column(crossAxisAlignment: CrossAxisAlignment.start, children: const [
+              SizedBox(width: 12),
+              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 Text('Business Owner',
                     style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700)),
                 Text('owner@business.com',
@@ -109,7 +109,7 @@ class OfflineScreen extends StatelessWidget {
                       color: kBg,
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(color: kBorder)),
-                  child: Row(mainAxisSize: MainAxisSize.min, children: const [
+                  child: const Row(mainAxisSize: MainAxisSize.min, children: [
                     Icon(Icons.check_circle, size: 14, color: kInk),
                     SizedBox(width: 6),
                     Text('Working Offline',
